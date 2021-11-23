@@ -19,5 +19,6 @@ module.exports = {
 
   plugins: [
     new ForkTsCheckerWebpackPlugin(),
+    new webpack.BannerPlugin({ banner: "#!/usr/bin/env node", raw: true }),
   ]
 };
